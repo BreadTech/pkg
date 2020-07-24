@@ -23,6 +23,6 @@ type DataEvent struct {
 	New interface{}
 }
 
-func NewDataEvent(old, newDat interface{}) Interface {
-	return &DataEvent{Old: old, New: newDat}
+func NewDataEvent() Interface {
+	return &DataEvent{}
 }
